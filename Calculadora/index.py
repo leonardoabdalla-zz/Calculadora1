@@ -1,10 +1,8 @@
 import math
-entrada = input('Deseja utilizar a calculadora? (S/N) ')
-entrada = entrada.upper()
+entrada = input('Deseja utilizar a calculadora?(S/N) ').upper()
 while ( entrada == 'S'):
     print(' 1 - Simples\n 2 - Equação do segundo grau')
     entrada = input('Deseja realizar qual operação? ')
-    entrada = entrada.lower()
     if entrada == '2':
         a = int(input('Digite numero de A(x2): '))
         b = int(input('Digite o numero de B(x): '))
@@ -49,5 +47,5 @@ while ( entrada == 'S'):
                 print('Operador não identificado')
     else:
         print('esse operador não existe')
-    entrada = input('Deseja realizar nova operação?(S/N) ')
+    entrada = input('Deseja realizar nova operação?(S/N) ').upper()
 print('Obrigado! Até a próxima')
